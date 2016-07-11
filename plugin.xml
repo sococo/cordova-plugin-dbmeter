@@ -6,20 +6,6 @@
   <description>Cordova DBMeter plugin</description>
   <keywords>cordova,phonegap,volume,sound,audio,decibel</keywords>
 
-  <platform name="android">
-    <config-file target="AndroidManifest.xml" parent="/*">
-      <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    </config-file>
-
-    <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="DBMeter">
-        <param name="android-package" value="org.apache.cordova.dbmeter.DBMeter"/>
-      </feature>
-    </config-file>
-
-    <source-file src="src/android/DBMeter.java" target-dir="src/org/apache/cordova/dbmeter" />
-    <source-file src="src/android/PermissionHelper.java" target-dir="src/org/apache/cordova/dbmeter" />
-  </platform>
 
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
