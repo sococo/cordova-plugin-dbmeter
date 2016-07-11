@@ -53,7 +53,7 @@ import AVFoundation
       if (!self.isTimerExists) {
         self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0))
         dispatch_source_set_event_handler(self.timer, self.timerCallBack)
-        dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, NSEC_PER_SEC / 300, 0)
+        dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, NSEC_PER_SEC / 2, 0)
         self.isTimerExists = true
       }
 
